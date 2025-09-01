@@ -23,6 +23,11 @@
     <p>Wij vinden echter ook het ecosysteem van belang en hebben dus planten proberen te planten die elkaar goed uitbalanceren, zoals kropsla naast radijs.</p>
     
     <p>In de toekomst willen wij graag ook niet-winstgevende maar wel plantjes die goed voor het ecosysteem zijn planten, zoals bijenbrood en wilde bloemen.</p>
+
+
+    <a href="HetassortimentvanPvB.html">
+    <button>Bekijk ons assortiment</button>
+	</a>
     
     
 
