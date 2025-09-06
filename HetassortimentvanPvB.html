@@ -3,30 +3,120 @@
 <head>
     <title>Ons assortiment</title>
     <style>
-        body {background-color: #f9fff2;
+        body {
+            background-color: #f9fff2;
             font-family: Arial, sans-serif;
-            padding: 20px;}
+            padding: 20px;
+        }
         h1 {color: #2e8b57;}
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
     </style>
 </head>
 <body>
     <h1>Ons assortiment</h1>
-    <p>Hier vind je binnenkort al onze plantjes en producten 🌱</p>
+    <p>Hier vind je al onze plantjes en producten 🌱</p>
+
+    <nav>
+        <ul>
+            <li><a href="#Bestellen">Bestellen</a></li>
+        </ul>
+    </nav>
+
+    <!-- Basilicum -->
+    <img src="images/basilicum.jpg" 
+         alt="Middelgrote basilicum plant"
+         width="250" height="300">
+
+    <p>
+        Middelgrote basilicum plant. (Voor in huis of buiten boven minimaal 12 °C)
+        <br><b>€2,99</b>
+    </p>
+
+    <!-- Aardbei -->
+    <img src="images/aardbei.jpg" 
+         alt="Aardbeien planten"
+         width="250" height="300">
+
+    <p>
+        Aardbeien planten, 1,5 jaar oud en gezond. Kan met zorg het hele jaar de grond in
+        <br><b>€14,99</b> per stuk
+    </p>
+
+    <!-- Salie -->
+    <img src="images/salie.jpg" 
+         alt="Salie kruid"
+         width="250" height="300">
+
+    <p>
+        Salie kruid, heerlijk voor door de ravioli met wat boter, zout, peper en tijm.
+        <br><b>€3,50</b> per bosje
+    </p>
+
+    <!-- Tomatenplant -->
+    <img src="images/tomatenplant.jpg" 
+         alt="Tomatenplant"
+         width="250" height="300">
+
+    <p>
+        Tomatenplant, ideaal voor in de tuin of serre. Geeft de hele zomer sappige vleestomaten.
+        <br><b>€7,99</b> per stuk
+    </p>
+
+    <!-- Tomatenplant 2 -->
+    <img src="images/tomatenplant2.jpg" 
+         alt="Tomatenplant variant"
+         width="250" height="300">
+
+    <p>
+        Tweede variant tomatenplant, wat kleiner maar erg productief en sterk. Perfect voor in potten op balkon.
+        <br><b>€5,99</b> per stuk
+    </p>
+
+    <!-- Tuinkers -->
+    <img src="images/tuinkers.jpg" 
+         alt="Tuinkers potje"
+         width="250" height="300">
+
+    <p>
+        Vers potje tuinkers, ideaal als gezonde topping voor broodjes, salades of soep.
+        <br><b>€1,99</b> per potje
+    </p>
 
     <a href="index.html">
-      <button>Terug naar home</button>
+        <button><h3>Terug naar home</h3></button>
     </a>
 
-<h1>Bestellen?</h1>
+    <h1 id="Bestellen">Bestellen?</h1>
+    <p>
+        Geïnteresseerd in onze producten?<br>
+        Vul hieronder je gegevens in en wij nemen contact met je op.
+    </p>
 
-<p>
-  Geïnteresseerd in onze producten?<br>
-  <b>Mail</b> ons dan: <b>peltvbiljouwkwekerij@gmail.com</b><br>
-  Dan kijken we wanneer we uw product kunnen leveren.<br>
-  Alvast bedankt!<br>
-  Joost van Biljouw en Alexander Pelt
-</p>
+    <!-- Bestelformulier -->
+    <form action="mailto:peltvbiljouwkwekerij@gmail.com" method="post" enctype="text/plain">
+        <label for="naam">Naam:</label><br>
+        <input type="text" id="naam" name="naam" required><br><br>
 
-    
+        <label for="email">E-mailadres:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="product">Product:</label><br>
+        <input type="text" id="product" name="product" placeholder="Bijv. basilicum, tomaat, salie"><br><br>
+
+        <label for="aantal">Aantal:</label><br>
+        <input type="number" id="aantal" name="aantal" min="1" value="1"><br><br>
+
+        <label for="opmerking">Opmerking:</label><br>
+        <textarea id="opmerking" name="opmerking" rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Verstuur bestelling">
+    </form>
 </body>
 </html>
